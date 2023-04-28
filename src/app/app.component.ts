@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectCronometro';
+  public mensaje : string = '';
+  public actualizar(tiempo: number) : void {
+    this.mensaje = tiempo + '(se actualiza cada 10 segundos)';
+  }
 }
